@@ -1,0 +1,158 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  width:fit-content;
+  margin: 0;
+  background-image:linear-gradient(to bottom, #D1E8E2, #116466, #2C3531);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: block;
+  padding-top: 100px;
+}
+
+.nameplate {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #D1E8E2;
+  letter-spacing: 1px;
+
+}
+
+header img {
+  display: block;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color: #2C3531;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0 25px 0;
+}
+
+nav ul {
+  list-style: none;
+
+}
+nav li {
+  display: inline;
+}
+
+a:hover {
+  background-color: #116466;
+}
+
+nav a {
+  font-size: 30px;
+  color: #D1E8E2;
+  text-decoration: none;
+  padding: 20px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
+#aboutbar {
+  display: flex;
+  background-color: #2C3531;
+  margin: 800px 0 0 0;
+}
+
+.aboutme {
+  display: flex;  
+}
+
+p{
+  color: #D1E8E2;
+  font-size: 25px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  word-wrap: wrap;
+}
+
+#showcasebar {
+  display: flex;
+  background-color: #2C3531;
+  margin: 200px 0 0 0;
+}
+
+#contactbar {
+  display: flex;
+  background-color: #2C3531;
+  margin: 200px 0 0 0;
+}
+
+h2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #D1E8E2;
+  font-size: 25px;
+  padding: 20px;
+  letter-spacing: 4px;
+}
+
+.aboutmepics img {
+  border-radius: 100px;
+  margin: 70px 70px 0 0;
+}
+
+.featuredproject {
+  display: block;
+}
+
+.featuredproject a {
+  display: block;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+a img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.projectlist {
+  display: flex;
+  margin: 50px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectlist a {
+  border-radius: 10px;
+  padding: 20px;
+  flex-grow:1;
+  max-height: 50%;
+  max-width: 50%;
+}
+
+h3 {
+  display: block;
+  color: #D1E8E2;
+  margin: 30px;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #D1E8E2;
+  padding: 20px;
+  
+}
