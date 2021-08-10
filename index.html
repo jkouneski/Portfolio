@@ -4,68 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joseph Kouneski</title>
-  <link rel="stylesheet" href="./develop/assets/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <header>
-    <img src="./develop/assets/IMG_1474.jpeg" alt="handsome fellow" height="200px"> 
-    <div class="nameplate">
-      <h1>JOSEPH KOUNESKI</h1>
-    </div>  
-      <!-- NAVBAR -->    
-      <nav>
-        <ul>
-          <li><a href="#aboutbar">ABOUT</a></li>
-          <li><a href="#showcasebar">SHOWCASE</a></li>
-          <li><a href="#contactbar">CONTACT</a></li>
-        </ul>  
-      </nav>
+  <header> 
+    <!-- NAVBAR -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="text-center">
+        <h1 class="display-4 ">Joey Kouneski</h1>
+        <img src="./assets/img/face.jpeg" alt="my face" height="150px">
+        <hr class="my-4">
+        <a class="btn btn-dark btn-lg" href="#aboutbar" role="button">About</a>
+        <a class="btn btn-dark btn-lg" href="#showcasebar" role="button">Showcase</a>
+        <a class="btn btn-dark btn-lg" href="#contactbar" role="button">Contact</a>
+      </div>
+    </div>
   </header>  
   <main>
     <!-- ABOUT -->
-    <div id="aboutbar">
-      <h2>ABOUT</h2>
-    </div>
-    <div class="aboutme">
-      <p>
-        Hello and welcome to my portfolio page! My name is Joseph Kouneski and I am currently enrolled in a 24-week coding bootcamp at Johns Hopkins University. 
-        <br>
-        <br>
-        I have been working in the commercial finance space over five years, four of which have been spent in corporate syndicated lending operations at Morgan Stanley. Having worked in a wide range of roles within the financial space, I used many different tools and found myself with a growing interest in how the software was developed. 
-        <br>
-        <br>
-        My hobbies include skydiving, snowbarding, video games, and houseplants. 
-      </p>
-      <div class="aboutmepics">
-       
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">About Me</h1>
+        <p class="lead">Hello and welcome to my portfolio page! My name is Joseph Kouneski and I am currently enrolled in a 24-week coding bootcamp at Johns Hopkins University.</p>
+        <p class="lead">I have been working in the commercial finance space over five years, four of which have been spent in corporate syndicated lending operations at Morgan Stanley. Having worked in a wide range of roles within the financial space, I used many different tools and found myself with a growing interest in how the software was developed.</p>
+        <p class="lead">My hobbies include skydiving, snowbarding, video games, and houseplants.</p>
       </div>
     </div>
-    <!-- SHOWCASE -->
+
+    <!-- CAROUSEL -->
     <div id="showcasebar">
-      <h2>SHOWCASE</h2>
-    </div>
-    <div class="featuredproject">
-      <a href="https://jkouneski.github.io/Reddit-Effect/"><img src="./develop/assets/redditeffectmockup.png" alt="Reddit Effect Homepage"></a>
-    </div>
-    <div class="projectlist">
-      <a href="https://jkouneski.github.io/PasswordGenerator/"><img src="./develop/assets/Screen Shot 2021-04-23 at 9.10.09 PM.png" alt="password generator"></a>
-      <a href="https://jkouneski.github.io/workday-scheduler/"><img src="./develop/assets/Screen Shot 2021-04-23 at 9.20.46 PM.png" alt="workday scheduler"></a>
-      <a href="https://jkouneski.github.io/Code-Quiz/"><img src="./develop/assets/Screen Shot 2021-04-23 at 9.23.37 PM.png" alt="code quiz"></a>
-      <a href="INSERT URL"><img src="./develop/assets/WIP.jpg" alt="work in progress placeholder"></a>
+      <h2 class="display-4">Showcase</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="overlay-image" style="background-image:url(./assets/img/reddit.png);"></div>
+            <div class="container">
+              <h1>Reddit-Effect</h1>
+              <a href="https://github.com/jkouneski/Reddit-Effect" class="btn btn-lg btn-dark">Demo</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image:url(./assets/img/noteTaker.png);"></div>
+            <div class="container">
+              <h1>Note Taker</h1>
+              <a href="https://fathomless-sea-57876.herokuapp.com/" class="btn btn-lg btn-dark">Demo</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image:url(./assets/img/pwGen.png);"></div>
+            <div class="container">
+              <h1>Password Generator</h1>
+              <a href="https://jkouneski.github.io/PasswordGenerator/" class="btn btn-lg btn-dark">Demo</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image:url(./assets/img/dayScheduler.png);"></div>
+            <div class="container">
+              <h1>Workday Scheduler</h1>
+              <a href="https://jkouneski.github.io/workday-scheduler/" class="btn btn-lg btn-dark">Demo</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image:url(./assets/img/quiz.png);"></div>
+            <div class="container">
+              <h1>Coding Quiz</h1>
+              <a href="https://jkouneski.github.io/Code-Quiz/" class="btn btn-lg btn-dark">Demo</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image:url(./assets/img/WIP.jpg);"></div>
+            <div class="container">
+              <h1>Team Profile Generator</h1>
+              <a href="https://github.com/jkouneski/Team-Profile-Generator" class="btn btn-lg btn-dark">Demo</a>
+            </div>
+          </div>
+
+        </div>
+        
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
 
-    <!-- CONTACT INFO -->    
-    <div id="contactbar">
-      <h2>CONTACT</h2>
+
+
+
+    
+    
+
+    <!-- CONTACT INFO -->
+    <div id="contactbar" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h2 class="display-4">Contact</h2>
+        <p>email :<a href="mailto:joeykouneski@gmail.com"> joeykouneski@gmail.com</a></p>
+        <p><a href="https://github.com/jkouneski"></a>github</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/joseph-kouneski"></a></p>
+      </div>
     </div>
-      <h3>PHONE :<a href="tel:+4106525501">(410) 652 5501</a>
-      <h3>EMAIL :<a href="mailto:jkouneski@yahoo.com"> jkouneski@yahoo.com</a>
-      <h3>github: <a href="https://github.com/jkouneski"></a></h3>
-      <h3>LinkedIn: <a href="https://www.linkedin.com/in/joseph-kouneski"></a></h3>
   </main>
-  <footer>
-
-  </footer>
-
-</body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
